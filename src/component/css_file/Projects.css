@@ -7,7 +7,7 @@
   padding: 20px;
   border-radius: 8px;
   background-color: white;
-  position:fixed;
+  position:absolute;
 }
 
 .projects-section:hover{
@@ -48,6 +48,7 @@
   width: calc(50% - 15px); 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   padding: 5px;
+  margin-bottom: 30px;
 }
 
 .project-card:hover {
