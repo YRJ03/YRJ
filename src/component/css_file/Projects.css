@@ -1,15 +1,17 @@
-
 .projects-section {
-  width: 70vw; 
+  width: 70vw;
+  height: 70vmax;
   margin: 50px auto;
   margin-top: 110px;
   text-align: center;
   padding: 20px;
   border-radius: 8px;
   background-color: white;
+  position: relative;
+  /* Changed from absolute */
 }
 
-.projects-section:hover{
+.projects-section:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
@@ -36,23 +38,22 @@
   margin-top: 0.5rem;
   opacity: 0;
   animation: fadeIn 1s ease-in 2s forwards;
-
 }
 
 .project-card {
-  background-color: #f9f9f9; 
-  border-radius: 8px; 
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); 
-  overflow: hidden;  
-  width: calc(50% - 15px); 
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  width: calc(50% - 15px);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   padding: 5px;
   margin-bottom: 30px;
 }
 
 .project-card:hover {
-  transform: scale(1.05);  
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);  
+  transform: scale(1.05);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
 }
 
 .project-link {
@@ -64,7 +65,7 @@
 .project-image {
   width: 100%;
   height: 40vh;
-  object-fit: cover;  
+  object-fit: cover;
   transition: opacity 0.3s ease;
   border-radius: 8px;
 }
@@ -88,33 +89,38 @@
 }
 
 @media (max-width: 768px) {
-  .projects-section{
+  .projects-section {
     width: 98%;
-    position: absolute;
+    margin-top: 20px;
+    /* Adjust margin for better alignment on smaller screens */
   }
+
   .projects-container {
     flex-direction: column;
     align-items: center;
+    padding: 0 10px;
+    /* Added padding for better alignment */
   }
 
   .project-card {
-    width: 100%;  
-    margin-bottom: 20px;  
+    width: 100%;
+    margin-bottom: 20px;
   }
 
-  .project-image{
+  .project-image {
     height: 20vh;
   }
 
   .projects-header {
-    font-size: 28px; 
+    font-size: 28px;
   }
 
   .project-title {
-    font-size: 20px; 
+    font-size: 20px;
   }
+
   .project-description {
-    font-size: 14px;  
+    font-size: 14px;
   }
 }
 
