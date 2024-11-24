@@ -1,145 +1,104 @@
 .projects-section {
-  width: 70vw;
-  height: 70vmax;
-  margin: 50px auto;
-  margin-top: 110px;
+  padding: 2rem;
   text-align: center;
-  padding: 20px;
-  border-radius: 8px;
-  background-color: white;
-  position: relative;
-  /* Changed from absolute */
-}
-
-.projects-section:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  background-color: #f4f4f9;
+  /* Light background for the entire section */
 }
 
 .projects-header {
-  font-size: 40px;
-  font-weight: bold;
-  color: rgb(138, 15, 15);
-  text-shadow: 1px 1px 1px green, 2px 2px 2px blue;
-  margin-bottom: 30px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  display: inline-block;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: typing 4s steps(15) 0s 1 normal both, blink 0.75s step-end infinite;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+  /* Dark text for the header */
 }
 
 .projects-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 10px;
-  margin-top: 0.5rem;
-  opacity: 0;
-  animation: fadeIn 1s ease-in 2s forwards;
+  gap: 2rem;
+  justify-content: center;
 }
 
 .project-card {
-  background-color: #f9f9f9;
+  width: 250px;
+  border: 1px solid #ccc;
   border-radius: 8px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
   overflow: hidden;
-  width: calc(50% - 15px);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  padding: 5px;
-  margin-bottom: 30px;
-}
-
-.project-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+  /* White background for each project card */
 }
 
 .project-link {
-  display: block;
-  color: inherit;
   text-decoration: none;
+  color: inherit;
+}
+
+.project-image-container {
+  position: relative;
+}
+
+.image-slider {
+  display: block;
 }
 
 .project-image {
   width: 100%;
-  height: 40vh;
-  object-fit: cover;
-  transition: opacity 0.3s ease;
-  border-radius: 8px;
+  height: auto;
+  cursor: pointer;
 }
 
 .project-info {
-  padding: 20px;
-  background-color: #ffffff;
+  padding: 1rem;
+  background-color: #fafafa;
+  /* Light gray background for project info */
 }
 
 .project-title {
-  font-size: 22px;
-  font-weight: bold;
-  color: #2c3e50;
-  margin-bottom: 10px;
+  font-size: 1.5rem;
+  margin: 0;
+  color: #333;
 }
 
 .project-description {
-  font-size: 16px;
+  font-size: 1rem;
   color: #555;
-  line-height: 1.6;
 }
 
-@media (max-width: 768px) {
-  .projects-section {
-    width: 98%;
-    margin-top: 20px;
-    /* Adjust margin for better alignment on smaller screens */
-  }
-
-  .projects-container {
-    flex-direction: column;
-    align-items: center;
-    padding: 0 10px;
-    /* Added padding for better alignment */
-  }
-
-  .project-card {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .project-image {
-    height: 20vh;
-  }
-
-  .projects-header {
-    font-size: 28px;
-  }
-
-  .project-title {
-    font-size: 20px;
-  }
-
-  .project-description {
-    font-size: 14px;
-  }
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Dark background for modal overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
 }
 
-@keyframes typing {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 100%;
-  }
+.modal-content {
+  background-color: #fff;
+  /* White background for modal content */
+  padding: 1rem;
+  position: relative;
+  border-radius: 8px;
+  /* Rounded corners for the modal content */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for modal */
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
 
-  to {
-    opacity: 1;
-  }
+.modal-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
