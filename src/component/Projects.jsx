@@ -20,6 +20,12 @@ const Projects = () => {
       imageUrl: './images/githubprofileviewer.png', 
       projectUrl: 'https://github-profile-viewer-ochre.vercel.app/', 
       description: 'A GitHub Profile Viewer allows users to view the public information of a GitHub user or developer.'
+    },
+    {
+      title: 'TicTacToe',
+      imageUrl: './images/tic-tac-toe.png', 
+      projectUrl: 'https://tic-tac-toe-yuvraj-yadavs-projects-6e99a305.vercel.app/', 
+      description: 'Tic-Tac-Toe is a simple two-player game where players take turns marking spaces on a 3x3 grid with either an "X" or an "O." '
     }
   ];
 
