@@ -14,6 +14,12 @@ const Projects = () => {
       imageUrl: './images/Search_Img.png', 
       projectUrl: 'https://search-img-xi.vercel.app/', 
       description: 'An image finder web tool that helps users search for images using keywords or by uploading an image.'
+    },
+    {
+      title: 'Github Profile Finder',
+      imageUrl: './images/githubprofileviewer.png', 
+      projectUrl: 'https://github-profile-viewer-ochre.vercel.app/', 
+      description: 'A GitHub Profile Viewer allows users to view the public information of a GitHub user or developer.'
     }
   ];
 
