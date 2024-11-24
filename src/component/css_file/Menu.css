@@ -1,6 +1,10 @@
 
 .menu-container {
     width: 100%;
+<<<<<<< HEAD
+=======
+    height: 90vmax;
+>>>>>>> 902393b0e34e50facf101c9989cb7f7e217e7f38
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -2,6 +2,7 @@
   padding: 2rem;
   text-align: center;
   background-color: #f4f4f9;
+<<<<<<< HEAD
   margin-top: 80px;
 }
 
@@ -18,6 +19,16 @@
   white-space: nowrap;
   overflow: hidden;
   animation: typing 4s steps(15) 0s 1 normal both, blink 0.75s step-end infinite;
+=======
+  /* Light background for the entire section */
+}
+
+.projects-header {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+  /* Dark text for the header */
+>>>>>>> 902393b0e34e50facf101c9989cb7f7e217e7f38
 }
 
 .projects-container {
@@ -33,6 +44,7 @@
   border-radius: 8px;
   overflow: hidden;
   background-color: #fff;
+<<<<<<< HEAD
   opacity: 0;
   animation: fadeIn 1s ease-in 2s forwards;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
@@ -40,6 +52,9 @@
 
 .project-card:hover{
   transform: translateY(-5px);
+=======
+  /* White background for each project card */
+>>>>>>> 902393b0e34e50facf101c9989cb7f7e217e7f38
 }
 
 .project-link {
@@ -57,12 +72,17 @@
 
 .project-image {
   width: 100%;
+<<<<<<< HEAD
   height: 160px;
   padding: 0.5px;
   margin-top: 0.5px;
   cursor: pointer;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+=======
+  height: auto;
+  cursor: pointer;
+>>>>>>> 902393b0e34e50facf101c9989cb7f7e217e7f38
 }
 
 .project-info {
@@ -119,4 +139,8 @@
   max-width: 100%;
   height: auto;
   display: block;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 902393b0e34e50facf101c9989cb7f7e217e7f38
